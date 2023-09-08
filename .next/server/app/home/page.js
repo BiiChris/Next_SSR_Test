@@ -258,19 +258,21 @@ __webpack_require__.r(__webpack_exports__);
 function Page() {
     const [username, setusername] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)("");
     console.log(4);
-    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-        children: [
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("label", {
-                htmlFor: "name",
-                children: "Name"
-            }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("input", {
-                type: "text",
-                id: "name",
-                value: username,
-                onChange: (e)=>setusername(e.target.value)
-            })
-        ]
+    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+        children:  true ? /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+            children: [
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("label", {
+                    htmlFor: "name",
+                    children: "Name"
+                }),
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("input", {
+                    type: "text",
+                    id: "name",
+                    value: username,
+                    onChange: (e)=>setusername(e.target.value)
+                })
+            ]
+        }) : /*#__PURE__*/ 0
     });
 }
 

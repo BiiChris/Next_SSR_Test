@@ -8,8 +8,22 @@ export default function Page() {
 
     return (
         <>
-            <label htmlFor="name">Name</label>
-            <input type="text" id="name" value={username} onChange={e => setusername(e.target.value)} />
+            {
+                true == true ?
+                <>
+                        <label htmlFor="name">Name</label>
+                        <input type="text" id="name" value={username} onChange={e => setusername(e.target.value)} />
+                </>
+                    :
+                <>
+                        <div>hello</div>
+                        <div>hello</div>
+                        <div>hello</div>
+                        <div>hello</div>
+                        <div>hello</div>
+                        <div>hello</div>                       
+                </>
+            }
         </>
     )
 }
